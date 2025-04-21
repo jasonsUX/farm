@@ -1,3 +1,5 @@
+/* CSS BY JASON TAN*/
+
 /* IMPORTED FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Habibi&family=Irish+Grover&display=swap');
 
@@ -59,36 +61,43 @@ table {
 }
 /* GLOBAL STYLES (mobile first/small) */
 html{
-    background-color: var(--white);
     min-width: 428px;
 }
 
 header{
+    display: block;
     background-color: var(--green);
-    
 }
 
 h1{
+    text-align: center;
+    margin: 1rem;
     font-size: 2.5em;
     font-family:'Irish Grover';
     color: var(--white);
 }
 header > p{
+    text-align: center;
     color: var(--white);
     font-family: 'Habibi';
+    margin: 1rem;
 }
 
 nav{
+    display: block;
     background-color: var(--white);
     padding: 1em;
 }
 
 nav a{
+    align-items: center;
     background-color: var(--orange);
     font-family: 'Habibi';
     color: var(--white);
 }
 /* MEDIA QUERY (medium) */
+@media screen and (min-width: 834px){
 
+}
 /* MEDIA QUERY (large) */
 /* MEDIA QUERY (xl) */
