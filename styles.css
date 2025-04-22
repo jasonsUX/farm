@@ -66,34 +66,71 @@ html{
 
 header{
     display: block;
-    background-color: var(--green);
+    padding: 1rem;
+    margin: -1rem;
 }
 
 h1{
     text-align: center;
-    margin: 1rem;
     font-size: 2.5em;
     font-family:'Irish Grover';
+    background-color: var(--green);
     color: var(--white);
+    width: 100%;
+    padding-top: 1rem;
 }
 header > p{
     text-align: center;
+    background-color: var(--green);
     color: var(--white);
     font-family: 'Habibi';
-    margin: 1rem;
+    padding-bottom: 1rem;
 }
 
 nav{
     display: block;
-    background-color: var(--white);
-    padding: 1em;
+}
+
+nav ul{
+    gap: 1em;
+    text-align: center;
+}
+
+nav li{
+    margin: 3em;
+    line-height: 2re;
 }
 
 nav a{
-    align-items: center;
+    display: block;
+    text-decoration: none;
     background-color: var(--orange);
-    font-family: 'Habibi';
     color: var(--white);
+    font-family: 'Habibi';
+    font-weight: bold;
+    margin: 0 auto;
+    padding: 1rem;
+    width: 80%;
+    border-radius: 5px;
+}
+
+h2{
+    font-family: 'Irish Grover';
+    color: var(--black);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+p{
+    font-family: 'Habibi';
+    color: var(--black);
+    font-weight: bold;
+}
+
+section{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
 }
 /* MEDIA QUERY (medium) */
 @media screen and (min-width: 834px){
