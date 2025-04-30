@@ -122,7 +122,7 @@ main{
 h2{
     font-family: 'Irish Grover';
     color: var(--black);
-    font-size: 2rem;
+    font-size: 1.75rem;
     margin-bottom: 1rem;
 }
 
@@ -130,6 +130,7 @@ p{
     font-family: 'Habibi';
     color: var(--black);
     font-weight: bold;
+    font-size: 1.25em;
 }
 
 section{
@@ -165,9 +166,132 @@ figcaption{
     font-size: 1.1em;
 }
 
+#info{
+    background-color: var(--green);
+    padding: 1em;
+}
+address{
+    color: var(--white);
+    font-family: 'Habibi';
+    margin-bottom: 1em;
+}
+#info h2{
+    color: var(--white);
+    font-size: 1.75em;
+}
+
+#info p{
+    color: var(--white);
+    font-weight: normal;
+    line-height: 16pt;
+}
+
+small{
+    display: block;
+    text-align: center;
+    font-family: 'Habibi';
+    color: var(--green);
+    font-size: 1.25em;
+    padding: 0.5em;
+    font-weight: bold;
+}
+
+#btt{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: var(--orange);
+    color: var(--white);
+    font-family: 'Habibi';
+    padding: 1em;
+    text-decoration: none;
+    border: 2px solid var(--white);
+    border-radius: 5px;
+}
+
 /* MEDIA QUERY (medium) */
 @media screen and (min-width: 834px){
+    nav ul{
+        gap: 1rem;
+    }
 
+    nav li{
+        display: inline-block;
+        gap: 1rem;
+    }
+    
+    nav a{
+        padding: 1rem 3rem 1rem 3rem;
+        gap: 1rem;
+        width: 100%;
+    }
+
+    #fruits{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    h3{
+        text-align: center;
+        font-weight: normal;
+        font-size: 1.25em;
+    }
+
+    #veggies{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #info{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #hours > p{
+        line-height: 25px;
+    }
+    
 }
 /* MEDIA QUERY (large) */
+@media screen and (min-width: 1280px){
+    header{
+        background-color: var(--green);
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    h1{
+        display: inline-block;
+        position: relative;
+    }
+
+    nav{
+        float: right;
+        margin-right: 2rem;
+        margin-top: 1rem;
+    }
+
+    nav ul{
+        display: flex;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    nav li{
+        float: left;
+    }
+
+    nav a{
+        border-radius: 5px;
+        border: 2px solid var(--white);
+    }
+    
+    header > p{
+        text-wrap: nowrap;
+        display: block;
+        position: sticky;
+        left: 0;
+    }
+}
 /* MEDIA QUERY (xl) */
