@@ -114,6 +114,11 @@ nav a{
     border-radius: 5px;
 }
 
+main{
+    display: grid;
+    align-items: center;
+}
+
 h2{
     font-family: 'Irish Grover';
     color: var(--black);
@@ -131,7 +136,35 @@ section{
     display: grid;
     grid-template-columns: 1fr;
     align-items: center;
+    text-align: center;
 }
+
+h3{
+    font-family: 'Irish Grover';
+    font-weight: bold;
+    padding: 1em;
+    font-size: 1.25em;
+}
+
+figure{
+    display: grid;
+    align-items: center;
+    margin: 1em;
+    position: relative;
+    justify-content: center;
+}
+
+figcaption{
+    display: grid;
+    color: var(--white);
+    position: absolute;
+    text-align: center;
+    justify-self: center;
+    background-color: rgba(0, 0, 0, .7);
+    padding: 1em 2em 1em 2em;
+    font-size: 1.1em;
+}
+
 /* MEDIA QUERY (medium) */
 @media screen and (min-width: 834px){
 
