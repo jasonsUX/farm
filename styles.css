@@ -255,15 +255,20 @@ small{
 @media screen and (min-width: 1280px){
     header{
         background-color: var(--green);
-        display: flex;
-        gap: 1rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
         align-items: center;
         justify-content: center;
     }
 
+    header h1, header p{
+        text-align: left;
+        grid-column: 1/2;
+        padding: 1rem;
+    }
+
     h1{
-        display: inline-block;
-        position: relative;
+        text-shadow: 3px 2px 1px var(--black);
     }
 
     nav{
@@ -274,8 +279,6 @@ small{
 
     nav ul{
         display: flex;
-        gap: 1rem;
-        padding: 1rem;
     }
 
     nav li{
@@ -286,12 +289,20 @@ small{
         border-radius: 5px;
         border: 2px solid var(--white);
     }
-    
-    header > p{
-        text-wrap: nowrap;
-        display: block;
-        position: sticky;
-        left: 0;
+
+    main{
+        margin: 1em;
     }
+    
+    #fruits{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #veggies{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
 }
 /* MEDIA QUERY (xl) */
